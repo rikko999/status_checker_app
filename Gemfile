@@ -7,8 +7,8 @@ end
 
 gem 'httparty'
 gem 'pg'
-gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.2'
+gem 'validate_url'
 gem 'whenever', require: false
 
 group :development, :test do

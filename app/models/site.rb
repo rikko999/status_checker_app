@@ -12,6 +12,8 @@
 #
 
 class Site < ApplicationRecord
+  validates :url, presence: true, url: true
+
   after_update :send_email, if: :saved_change_to_last_state?
 
   def check_state
