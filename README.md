@@ -49,3 +49,13 @@ $ whenever
 ```sh
 $ crontab -l
 ```
+
+### Stop cron job
+```sh
+$ whenever -c [identifier]
+```
+or manually
+
+```sh
+$ crontab -e
+```
