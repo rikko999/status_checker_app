@@ -15,7 +15,7 @@ class Site < ApplicationRecord
   validates :url, presence: true, url: true
 
   after_update :send_email, if: :saved_change_to_last_state?
-
+  # test	
   def check_state
     response = HTTParty.get(url)
     update(last_state: response.code, message: response.message)
